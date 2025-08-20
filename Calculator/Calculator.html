@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="css/calculator.css" />
+  <script src="js/calculator.js" defer></script>
+</head>
+<body>
+  <h1>Calculator</h1>
+
+  <div class="calculator" role="application" aria-label="basic calculator">
+    <div class="calculator__display" id="display" aria-live="polite">0</div>
+
+    <div class="calculator__keys" id="keys">
+      <!-- Row 1 -->
+      <button class="key key--fn" data-action="all-clear" aria-label="all clear">AC</button>
+      <button class="key key--fn" data-action="delete" aria-label="delete last">DEL</button>
+      <button class="key key--fn" data-action="percent" aria-label="percent">%</button>
+      <button class="key key--op" data-action="operator" data-op="÷" aria-label="divide">÷</button>
+
+      <!-- Row 2 -->
+      <button class="key" data-digit="7">7</button>
+      <button class="key" data-digit="8">8</button>
+      <button class="key" data-digit="9">9</button>
+      <button class="key key--op" data-action="operator" data-op="×" aria-label="multiply">×</button>
+
+      <!-- Row 3 -->
+      <button class="key" data-digit="4">4</button>
+      <button class="key" data-digit="5">5</button>
+      <button class="key" data-digit="6">6</button>
+      <button class="key key--op" data-action="operator" data-op="−" aria-label="minus">−</button>
+
+      <!-- Row 4 -->
+      <button class="key" data-digit="1">1</button>
+      <button class="key" data-digit="2">2</button>
+      <button class="key" data-digit="3">3</button>
+      <button class="key key--op" data-action="operator" data-op="+" aria-label="plus">+</button>
+
+      <!-- Row 5 -->
+      <button class="key key--fn" data-action="sign" aria-label="toggle sign">±</button>
+      <button class="key" data-digit="0">0</button>
+      <button class="key" data-action="decimal">.</button>
+      <button class="key key--equals" data-action="equals" aria-label="equals">=</button>
+    </div>
+
+    
+  </div>
+
+  <!-- Optional footer -->
+  <p class="hint">Tip: you can also type on your keyboard (0–9, + − × ÷, Enter, Backspace, .)</p>
+</body>
+</html>

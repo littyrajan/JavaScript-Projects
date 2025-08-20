@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fantasy Pizza</title>
+    <link rel="stylesheet" href="Pizza_CSS/Pizza.css">
+    <script src="Pizza_JavaScript/Pizza.js" defer></script>
+</head>
+<body>
+    <header>
+  <div class="wrapper">
+    <h1 class="logo">Fantasy <span>Pizza</span></h1>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#"><i class="fa fa-home nav-icon"></i>Order</a></li>
+        <li><a href="#"><i class="fa fa-info nav-icon"></i>About</a></li>
+        <li><a href="#"><i class="fa fa-usd nav-icon"></i>Contact</a></li>
+    </ul>
+    </nav>
+    
+    <div class="menu-toggle">
+      <div class="hamburger"></div>
+    </div>
+    
+  </div>
+</header>
+
+    <div class="banner">
+            <img src="images/b.avif" height="300px" width="1400px"  alt="Unicorn holding pizza" class="banner-img">
+    </div>
+    
+
+    <main>
+        <h2>- - - Order - - -</h2>
+        <form id="pizzaForm">
+            <div>
+            <!-- Size -->
+            <div class="menu-section1" >
+                <h3>Size</h3>
+                <label><input type="radio" name="size" value="Personal"> Personal ($6)</label><br>
+                <label><input type="radio" name="size" value="Medium" checked> Medium ($10)</label><br>
+                <label><input type="radio" name="size" value="Large"> Large ($14)</label><br>
+                <label><input type="radio" name="size" value="Extra Large"> Extra Large ($16)</label>
+            </div>
+
+             <!-- Cheese -->
+            <div class="menu-section1">
+                <h3>Cheese</h3>
+                <label><input type="radio" name="cheese" value="Regular" checked> Regular</label><br>
+                <label><input type="radio" name="cheese" value="Extra Cheese"> Extra Cheese (+$3)</label><br>
+                <label><input type="radio" name="cheese" value="No Cheese"> No Cheese</label>
+            </div>
+            </div>
+
+            <div>
+            <!-- Crust -->
+            <div class="menu-section2">
+                <h3>Crust</h3>
+                <label><input type="radio" name="crust" value="Regular" checked> Regular</label><br>
+                <label><input type="radio" name="crust" value="Garlic Butter"> Garlic Butter</label><br>
+                <label><input type="radio" name="crust" value="Cheese Stuffed"> Cheese Stuffed (+$3)</label><br>
+                <label><input type="radio" name="crust" value="Spicy"> Spicy</label><br>
+                <label><input type="radio" name="crust" value="House Special"> House Special</label>
+            </div>
+
+            <!-- Sauce -->
+            <div class="menu-section2">
+                <h3>Sauce</h3>
+                <label><input type="radio" name="sauce" value="Marinara Sauce" checked> Marinara</label><br>
+                <label><input type="radio" name="sauce" value="White Sauce"> White</label><br>
+                <label><input type="radio" name="sauce" value="Barbeque Sauce"> Barbeque</label><br>
+                <label><input type="radio" name="sauce" value="No Sauce"> No Sauce</label>
+            </div>
+
+           
+            </div>
+
+            <div>
+            <!-- Veggies -->
+            <div class="menu-section">
+                <h3>Veggies</h3>
+                <label><input type="checkbox" name="veggies" value="Tomatoes"> Tomatoes</label><br>
+                <label><input type="checkbox" name="veggies" value="Onions"> Onions</label><br>
+                <label><input type="checkbox" name="veggies" value="Olives"> Olives</label><br>
+                <label><input type="checkbox" name="veggies" value="Green Peppers"> Green Peppers</label><br>
+                <label><input type="checkbox" name="veggies" value="Mushrooms"> Mushrooms</label><br>
+                <label><input type="checkbox" name="veggies" value="Pineapple"> Pineapple</label><br>
+                <label><input type="checkbox" name="veggies" value="Spinach"> Spinach</label><br>
+                <label><input type="checkbox" name="veggies" value="Jalapeno"> Jalapeño</label><br>
+                <p class="note">First veggie topping is free. $1 each after.</p>
+            </div>
+
+            <!-- Meat -->
+            <div class="menu-section">
+                <h3>Meat</h3>
+                <label><input type="checkbox" name="meat" value="Pepperoni"> Pepperoni</label><br>
+                <label><input type="checkbox" name="meat" value="Sausage"> Sausage</label><br>
+                <label><input type="checkbox" name="meat" value="Canadian Bacon"> Canadian Bacon</label><br>
+                <label><input type="checkbox" name="meat" value="Ground Beef"> Ground Beef</label><br>
+                <label><input type="checkbox" name="meat" value="Chicken"> Chicken</label><br>
+                <label><input type="checkbox" name="meat" value="Anchovy"> Anchovy</label><br>
+                <p class="note">First meat topping is free. $1 each after.</p>
+            </div>
+
+            </div>
+
+            <div class="buttons">
+                <button type="reset">Cancel</button>
+                <button type="button" onclick="getReceipt()">Place Order</button>
+            </div>
+        </form>
+
+        <div id="receipt"></div>
+    </main>
+
+    <footer>
+        <p>@Copyright Fantasy Pizza 2019</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>One Page Website</title>
+  <link rel="stylesheet" href="CSS/one_page_website.css">
+</head>
+<body>
+
+  <h1>My Image Gallery</h1>
+
+  <!-- Thumbnail images -->
+  <div class="gallery">
+    <img src="images/img_lights.jpg" alt="Lights" onclick="openLightbox();showSlide(1)">
+    <img src="images/img_snow.jpg" alt="Snow" onclick="openLightbox();showSlide(2)">
+    <img src="images/img_mountains.jpg" alt="Mountains" onclick="openLightbox();showSlide(3)">
+    <img src="images/img_nature.jpg" alt="Nature" onclick="openLightbox();showSlide(4)">
+    <img src="images/a.jpg" alt="Nature" onclick="openLightbox();showSlide(5)">
+    <img src="images/b.jpg" alt="Nature" onclick="openLightbox();showSlide(6)">
+    <img src="images/c.jpg" alt="Nature" onclick="openLightbox();showSlide(7)">
+    <img src="images/d.jpg" alt="Nature" onclick="openLightbox();showSlide(8)">
+  </div>
+
+  <!-- Lightbox container -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <div class="lightbox-content">
+      <div class="slide">
+        <img src="images/img_lights.jpg" alt="Lights">
+      </div>
+      <div class="slide">
+        <img src="images/img_snow.jpg" alt="Snow">
+      </div>
+      <div class="slide">
+        <img src="images/img_mountains.jpg" alt="Mountains">
+      </div>
+      <div class="slide">
+        <img src="images/img_nature.jpg" alt="Nature">
+      </div>
+
+      <!-- Next/Prev buttons -->
+      <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+  </div>
+
+  <script src="JS/one_page_website.js"></script>
+</body>
+</html>
