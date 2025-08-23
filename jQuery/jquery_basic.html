@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Example</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Importing jQuery from CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h2>jQuery Assignment</h2>
+
+    <!-- Button to hide and show content -->
+    <button id="hideBtn">Hide Content</button>
+    <button id="showBtn">Show Content</button>
+
+    <!-- Content section -->
+    <div id="content">
+        <p>This content can be shown or hidden using jQuery.</p>
+    </div>
+
+    <script>
+        // jQuery function that runs when page is ready
+        $(document).ready(function() {
+
+            // Hide content when "Hide" button is clicked
+            $("#hideBtn").click(function() {
+                $("#content").hide();
+            });
+
+            // Show content when "Show" button is clicked
+            $("#showBtn").click(function() {
+                $("#content").show();
+            });
+
+        });
+    </script>
+</body>
+</html>
