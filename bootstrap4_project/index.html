@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap4 Movie Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-info">
+  <a class="navbar-brand" href="#">Movies</a>
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="#showtimes">Showtimes</a></li>
+      <li class="nav-item"><a class="nav-link" href="#deals">Deals</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ================= ABOUT SECTION ================= -->
+<div class="jumbotron text-center" id="about">
+  <h1>Welcome to the Movie Club</h1>
+  <p>Find your favorite movies and showtimes</p>
+</div>
+
+<!-- ================= SHOWTIMES SECTION ================= -->
+<div class="container" id="showtimes">
+  <h2>Showtimes:</h2>
+  <div class="card-deck mt-4">
+
+    <!-- Card 1: Kong Skull Island -->
+    <div class="card">
+      <img src="./img/image1.png" class="card-img-top" alt="Kong Skull Island">
+      <div class="card-body">
+        <h5 class="card-title">Kong: Skull Island</h5>
+        <p class="card-text">A team of scientists explore an uncharted island in the Pacific, venturing into the domain of the mighty Kong, and must fight to escape a primal Eden.</p>
+        <span class="badge badge-pill badge-info">12:00 p.m.</span>
+        <span class="badge badge-pill badge-info">1:30 p.m.</span>
+        <span class="badge badge-pill badge-info">3:00 p.m.</span>
+        <span class="badge badge-pill badge-info">5:30 p.m.</span>
+        <span class="badge badge-pill badge-info">7:00 p.m.</span>
+        <span class="badge badge-pill badge-info">9:30 p.m.</span>
+      </div>
+    </div>
+
+    <!-- Card 2: Ghost in the Shell -->
+    <div class="card">
+      <img src="./img/image2.png" class="card-img-top" alt="Ghost in the Shell">
+      <div class="card-body">
+        <h5 class="card-title">Ghost in the Shell</h5>
+        <p class="card-text">In the near future, Major Mila Killian is cyber-enhanced to be a perfect soldier devoted to stopping the world's most dangerous criminals.</p>
+        <span class="badge badge-pill badge-info">12:00 p.m.</span>
+        <span class="badge badge-pill badge-info">1:30 p.m.</span>
+        <span class="badge badge-pill badge-info">3:00 p.m.</span>
+        <span class="badge badge-pill badge-info">5:30 p.m.</span>
+        <span class="badge badge-pill badge-info">7:00 p.m.</span>
+        <span class="badge badge-pill badge-info">9:30 p.m.</span>
+      </div>
+    </div>
+
+    <!-- Card 3: Beauty and the Beast -->
+    <div class="card">
+      <img src="./img/image3.png" class="card-img-top" alt="Beauty and the Beast">
+      <div class="card-body">
+        <h5 class="card-title">Beauty and the Beast</h5>
+        <p class="card-text">A selfish prince is cursed to become a monster, unless he learns to fall in love with a woman he keeps as prisoner.</p>
+        <span class="badge badge-pill badge-info">12:00 p.m.</span>
+        <span class="badge badge-pill badge-info">1:30 p.m.</span>
+        <span class="badge badge-pill badge-info">3:00 p.m.</span>
+        <span class="badge badge-pill badge-info">5:30 p.m.</span>
+        <span class="badge badge-pill badge-info">7:00 p.m.</span>
+        <span class="badge badge-pill badge-info">9:30 p.m.</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ================= MOVIE DEALS SECTION ================= -->
+<div class="container mt-5" id="deals">
+  <h2>Deals</h2>
+  
+  <!-- Bootstrap Jumbotron -->
+  <div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+    <div class="container">
+      <h1 class="display-4 hidden-sm-down text-white font-weight-bold text-uppercase">
+        Movie Deals
+      </h1>
+      <p class="lead">Check out our monthly deals...</p>
+
+      <!-- Bootstrap Button triggers Modal -->
+      <button type="button" class="btn btn-light btn-outline-primary" data-toggle="modal" data-target="#dealModal">
+        See our monthly movie deals!
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- NEW BOOTSTRAP COMPONENT: Modal -->
+<!-- Added modal popup to display details of movie deals -->
+<div class="modal fade" id="dealModal" tabindex="-1" role="dialog" aria-labelledby="dealModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-info text-white">
+        <h5 class="modal-title" id="dealModalLabel">Exclusive Movie Deals</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Deal 1:</strong> Buy 1 Get 1 Free on Tuesdays!</p>
+        <p><strong>Deal 2:</strong> 20% off for students every Thursday.</p>
+        <p><strong>Deal 3:</strong> Free popcorn with every weekend evening show.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Modal -->
+
+<!-- ================= SIGN-UP FORM SECTION ================= -->
+<div class="container mt-5 mx-auto" style="background-color:rgb(233, 196, 217); width: 750px;" id="signup">
+  <h2 class="text-center mb-4">Sign Up for Movie Updates</h2>
+  <p class="text-center">Stay updated with the latest showtimes and exclusive deals!</p>
+
+  <form class="col-md-6 offset-md-3" >
+    <!-- Name field -->
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+    </div>
+
+    <!-- Email field -->
+    <div class="form-group">
+      <label for="email">Email address</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter your email">
+      <small class="form-text text-muted">We’ll never share your email with anyone else.</small>
+    </div>
+
+    <!-- Password field -->
+    <div class="form-group">
+      <label for="password">Create Password</label>
+      <input type="password" class="form-control" id="password" placeholder="Create a password">
+    </div>
+
+    <!-- Checkbox -->
+    <div class="form-check mb-3">
+      <input type="checkbox" class="form-check-input" id="subscribeCheck">
+      <label class="form-check-label" for="subscribeCheck">
+        Subscribe to weekly movie deals
+      </label>
+    </div>
+
+    <!-- Submit button -->
+    <button type="submit" class="btn btn-info btn-block">Sign Up</button>
+  </form>
+
+</div>
+<!-- ================= END OF SIGN-UP FORM ================= -->
+
+
+<!-- ================= BOOTSTRAP JS SCRIPTS ================= -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
