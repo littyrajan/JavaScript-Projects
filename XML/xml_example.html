@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="XML_Example"></p>
+
+<script>
+var XML_Parser, XML_Document;
+
+// creates a text string (custom XML data)
+var Book = "<book>" +
+"<title>The Great Gatsby</title>" +
+"<author>F. Scott Fitzgerald</author>" +
+"<genre>Classic Fiction</genre>" +
+"<year>1925</year>" +
+"</book>";
+
+// creates an XML DOM parser
+XML_Parser = new DOMParser();
+
+// creates a new XML DOM object using the text string
+XML_Document = XML_Parser.parseFromString(Book, "text/xml");
+
+// display the content of chosen tag (e.g., <author>)
+document.getElementById("XML_Example").innerHTML =
+XML_Document.getElementsByTagName("author")[0].childNodes[0].nodeValue;
+</script>
+
+</body>
+</html>

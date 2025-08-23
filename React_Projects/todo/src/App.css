@@ -1,0 +1,52 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+li span {
+  cursor: pointer;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+li button {
+  margin-left: 15px;
+  background-color: red;
+}
