@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin-top: 50px;
+}
+
+input {
+    padding: 10px;
+    width: 200px;
+}
+
+button {
+    padding: 10px 15px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+#todos {
+    margin-top: 20px;
+}
+
+.todo-item {
+    background: white;
+    padding: 10px;
+    margin: 5px auto;
+    width: 250px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+}

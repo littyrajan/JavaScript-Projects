@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My ToDo App - Litty</title>
+    <link rel="stylesheet" href="css/todo.css">
+</head>
+<body>
+    <h1>My Personal ToDo List</h1>
+    <input id="task" type="text" placeholder="Enter a task">
+    <button id="add">Add Item</button>
+    <hr>
+    <div id="todos"></div>
+
+    <footer>
+        <p>Created by Litty | Date: <span id="date"></span></p>
+    </footer>
+
+    <script>
+        // Display today's date in footer
+        document.getElementById("date").textContent = new Date().toLocaleDateString();
+    </script>
+
+    <script src="js/todo.js"></script>
+</body>
+</html>
