@@ -1,15 +1,23 @@
 # JavaScript Projects
 
-This repository contains coding projects, assignments, and challenges completed as part of my JavaScript course.  
-The purpose of this repository is to track my progress, store my work in a structured way, and showcase my coding skills.
+These are some small projects I made using JavaScript.
 
-## Contents
-- Assignments from different modules
-- Practice challenges
-- Mini-projects demonstrating JavaScript concepts
+## Projects
+- [Pizza Menu](#Pizza_Project)
+- [Tic-Tac-Toe Game](#TicTacToe)
+- [Calculator](#Calculator)
 
-## Notes
-- I will regularly push new code to this repository throughout the course.  
-- The code here reflects my learning journey, so earlier projects may look simpler compared to later ones.  
-- This repository will serve as part of my portfolio for future opportunities.
 ---
+
+### Pizza Menu
+This project is a menu used to order pizza with a various selection of toppings. It then takes the input information and calculates a price for the order.
+
+---
+
+### Tic-Tac-Toe Game
+The classic game of tic-tac-toe. It randomly rolls dice to select which of the two players goes first and then users are off playing the classic game. Users can decide which token each player wants to use and the winner is celebrated with music and flashing lights.
+
+---
+
+### Calculator
+A basic 4 function calculator. Users can add, subtract, multiply, and divide on a sleek web version of a calculator.
